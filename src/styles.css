@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Rajdhani:wght@400;700&family=Rammetto+One&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-purple-base: #892ccd;
+  --color-purple-light: #a85fdd;
+  --color-error-base: #d04048;
+  --color-error-light: #f77980;
+
+  --color-gray-100: #e4e5ec;
+  --color-gray-200: #b5b6c9;
+  --color-gray-300: #7a7b9f;
+  --color-gray-400: #45455f;
+  --color-gray-500: #1a1b2d;
+  --color-gray-600: #131320;
+  --color-gray-700: #0f0f1a;
+
+  --font-rammetto: "Rammetto One", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
+
+}
