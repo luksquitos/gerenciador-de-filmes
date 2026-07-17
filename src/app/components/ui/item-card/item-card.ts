@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
+import { RouterLink } from "@angular/router";
+import { HlmButton, HlmButtonImports } from '@spartan-ng/helm/button';
 
 @Component({
   selector: 'app-item-card',
-  imports: [],
-  // templateUrl: './item-card.html',
-  template: `
-    <p class="bg-error-base font-rajdhani ">Funciona dessa forma também </p>
-    <!-- @for (item of ronaldos;) {} -->
-  `
+  imports: [RouterLink, HlmButton],
+  templateUrl: './item-card.html',
 })
 export class ItemCard {
+  isOk = true
+  canClick = false
+  nome = "Lucas"
   ronaldos = [
     {
       nome: "Ronaldo",
@@ -24,5 +25,12 @@ export class ItemCard {
       idade: 25
     },
   ]
+  onClick(): void {
+    console.log('Clicado')
+  }
+  // constructor(tor: string){
+  //   ronaldo = tor;
+
+  // }
 
 }

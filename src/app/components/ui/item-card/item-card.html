@@ -1,1 +1,15 @@
 <!-- <p class="bg-primary">item-card works!</p> -->
+ @if (isOk){
+  <p>Está ok</p>
+  <button
+    hlmBtn
+    [disabled]="canClick"
+    (click)="onClick()"
+    routerLink="/asdf"
+    class="bg-amber-600"
+  ></button>
+
+ }
+ @else {
+  <p>Não está</p>
+ }
