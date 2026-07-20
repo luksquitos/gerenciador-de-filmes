@@ -15,5 +15,11 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "tailwindCSS.classFunctions": ["cva", "cx", "clsx"],
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"],
+    ["cx\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"],
+    ["classes\\(\\(\\)\\s*=>\\s*\\[([^\\]]*)\\]", "[\"'`]([^\"'`]*)[\"'`]"]
+  ]
 }
